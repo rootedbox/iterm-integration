@@ -4,6 +4,23 @@
   "description": "Open iTerm2 at the workspace root or at the current file/folder location from the Explorer context menu.",
   "version": "0.0.1",
   "publisher": "rootedbox",
+  "icon": "images/icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rootedbox/iterm-integration"
+  },
+  "homepage": "https://github.com/rootedbox/iterm-integration#readme",
+  "bugs": {
+    "url": "https://github.com/rootedbox/iterm-integration/issues"
+  },
+  "keywords": [
+    "iterm",
+    "iterm2",
+    "terminal",
+    "macos",
+    "shell"
+  ],
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -45,12 +62,14 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "package": "vsce package"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^20.0.0",
     "@types/vscode": "^1.74.0",
+    "@vscode/vsce": "^3.7.1",
     "jest": "^30.2.0",
     "ts-jest": "^29.4.6",
     "typescript": "^5.0.0"
